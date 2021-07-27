@@ -1,17 +1,13 @@
-const { request } = require('express')
 const express = require('express')
-const app = express()
-const port = 3000
+const app = express();
+
+app.set('port',process.env.PORT||4000);
+
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.send('')
 })
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
-
-app.use(express.static('public'));
 
 app.get('/login',(req,res)=>{
     console.log(req.body);
@@ -23,3 +19,7 @@ app.post('/auth',(req,res)=>{
     typeof(user)
     res.render('./public/relatorio.html')
 })
+
+app.listen(app.get('port'),()=>{
+  console.log('corriendo',app.get('port'))
+});
