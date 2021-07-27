@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Puesta En Servicio Swicht</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./relatorio.html">Prototipo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Puesta en servicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./usuario.html">Usuarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="equipo.html">Equipos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./zona.html">Zonas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <h4>Dar de alta switch en servicio</h4>
+
+              <div class="row mb-3">
+                <label for="tipodeequipo" class="form-label">Tipo de equipo</label>
+                <input class="form-control" list="datalistOptions" id="tipodeequipo">
+                <datalist id="datalistOptions">
+                  <option value="Tipo de equipo A">
+                  <option value="Tipo de equipo B">
+                  <option value="Tipo de equipo c">
+                </datalist>
+              </div>
+
+              <div class="row mb-3">
+                <label for="zonas" class="form-label">Zona</label>
+                <input class="form-control" list="datalistOptions2" id="zonas">
+                <datalist id="datalistOptions2">
+                  <option value="zona A">
+                  <option value="zona B">
+                  <option value="zona c">
+                </datalist>
+              </div>
+
+              <div class="row mb-3">
+                <label for="tipo" class="form-label">Tipo</label>
+                <input class="form-control" list="datalistOptions3" id="tipo">
+                <datalist id="datalistOptions2">
+                  <option value="tipo A">
+                  <option value="tipo B">
+                  <option value="tipo c">
+                </datalist>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputNomeclatura" class="col-sm-3 col-form-label">Nomeclatura</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputNomeclatura">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputcircuito" class="col-sm-2 col-form-label">Circuito</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputcircuito">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="Direccionfisica" class="form-label">Direccion Fisica</label>
+                <textarea class="form-control" id="Direccionfisica" rows="3"></textarea>
+              </div>
+
+              <div class="row mb-3">
+                <label for="direccionDPN" class="col-sm-2 col-form-label">Direccion dpn</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="direccionDPN">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="direccionIP" class="col-sm-2 col-form-label">Direccion IP</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="direccionIP">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="puerto" class="col-sm-2 col-form-label">Puerto</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="puerto">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="canal" class="col-sm-2 col-form-label">canal</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="canal">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="numserieequipo" class="col-sm-2 col-form-label"># Serie Equipo</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="numserieequipo">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="numserieremota" class="col-sm-2 col-form-label"># Serie Remota</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="direccionIP">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="numserieradio" class="col-sm-2 col-form-label"># Serie Radio</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="numserieradio">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="N" class="col-sm-2 col-form-label">N</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="N">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="W" class="col-sm-2 col-form-label">W</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="W">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="repetidor" class="col-sm-2 col-form-label">Repetidor</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="repetidor">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="licencia1" class="col-sm-2 col-form-label">Licencia 1</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="licencia1">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="licencia2" class="col-sm-2 col-form-label">Licencia 2</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="licencia2">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="operador" class="form-label">operador</label>
+                <input class="form-control" list="datalistOptions3" id="operador">
+                <datalist id="datalistOptions3">
+                  <option value="operador A">
+                  <option value="operador B">
+                  <option value="operador c">
+                </datalist>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Fecha" class="col-sm-2 col-form-label">Fecha</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Fecha">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="HoraInicio" class="col-sm-2 col-form-label">Hora Inicio</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="HoraInicio">
+                </div>
+              </div>
+
+              <h4>Entradas digitales</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                <label class="form-check-label" for="flexCheckDefault1">
+                  Estado del Equipo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" checked>
+                <label class="form-check-label" for="flexCheckDefault2">
+                  Local/Remote
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                <label class="form-check-label" for="flexCheckDefault3">
+                  FVCD
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                <label class="form-check-label" for="flexCheckDefault4">
+                  FVCA
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                <label class="form-check-label" for="flexCheckDefault5">
+                  SF6
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                <label class="form-check-label" for="flexCheckDefault6">
+                  Tarjeta analogica
+                </label>
+              </div>
+
+              <h4>Salidas digitales</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+                <label class="form-check-label" for="flexCheckDefault7">
+                  Apertura/cierre
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+                <label class="form-check-label" for="flexCheckDefault8">
+                  Reset
+                </label>
+              </div>
+
+              <h4>Entradas Analogicas</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+                <label class="form-check-label" for="flexCheckDefault9">
+                  Amps fa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+                <label class="form-check-label" for="flexCheckDefault10">
+                  Amps fb
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaul11">
+                <label class="form-check-label" for="flexCheckDefaul11">
+                  Amps fc
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+                <label class="form-check-label" for="flexCheckDefault12">
+                  volts fa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                <label class="form-check-label" for="flexCheckDefault13">
+                  volts fb
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
+                <label class="form-check-label" for="flexCheckDefault14">
+                  volts fc
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15">
+                <label class="form-check-label" for="flexCheckDefault15">
+                  mw fa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault16">
+                <label class="form-check-label" for="flexCheckDefault16">
+                  mw fb
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17">
+                <label class="form-check-label" for="flexCheckDefault17">
+                  mw fc
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault18">
+                <label class="form-check-label" for="flexCheckDefault18">
+                  mvar fa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault19">
+                <label class="form-check-label" for="flexCheckDefault19">
+                  mvar fb
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault20">
+                <label class="form-check-label" for="flexCheckDefault20">
+                  mvar fc
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault21">
+                <label class="form-check-label" for="flexCheckDefault21">
+                  mva fa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault22">
+                <label class="form-check-label" for="flexCheckDefault22">
+                  mva fb
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault23">
+                <label class="form-check-label" for="flexCheckDefault23">
+                  mva fc
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault24">
+                <label class="form-check-label" for="flexCheckDefault24">
+                  frec
+                </label>
+              </div>
+              <h4>inf adicional</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault25">
+                <label class="form-check-label" for="flexCheckDefault25">
+                  porcentaje
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault26">
+                <label class="form-check-label" for="flexCheckDefault26">
+                  Vo.Bo. operador
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault27">
+                <label class="form-check-label" for="flexCheckDefault27">
+                  disponible
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault28">
+                <label class="form-check-label" for="flexCheckDefault28">
+                  historico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault29">
+                <label class="form-check-label" for="flexCheckDefault29">
+                  eq. automatizado
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="Observaciones" class="form-label">Observaciones</label>
+                <textarea class="form-control" id="Observaciones" rows="3"></textarea>
+              </div>
+              <div class="row mb-3">
+                <label for="EjecutadoCampo" class="col-sm-2 col-form-label">Ejecutado en campo</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="EjecutadoCampo">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="Ejecutadoucm" class="col-sm-2 col-form-label">Ejecutado en UCM</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Ejecutadoucm">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="horatermiado" class="col-sm-3 col-form-label">hora de terminacion</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="horatermiado">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</body>
+
+</html>

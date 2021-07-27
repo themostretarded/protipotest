@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Equipo</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./relatorio.html">Prototipo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./puestaSwitcht.html">Puesta en servicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./usuario.html">Usuarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="equipo.html">Equipos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./zona.html">Zonas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <div class="row mb-3">
+                <label for="inputID" class="col-sm-2 col-form-label">ID</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputID">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputzona" class="form-label">Zona</label>
+                <div class="col-sm-10"><select id="inputzona" class="form-select">
+                    <option selected>Selecciona...</option>
+                    <option value="1">Zona a</option>
+                    <option value="2">Zona b</option>
+                    <option value="3">Zona c</option>
+                  </select></div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputsubestacion" class="form-label">Subestacion</label>
+                <div class="col-sm-10"><select id="inputsubestacion" class="form-select">
+                    <option selected>Selecciona...</option>
+                    <option value="1">Subestacion a</option>
+                    <option value="2">Subestacion b</option>
+                    <option value="3">Subestacion c</option>
+                  </select></div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputtipoequipo" class="form-label">tipo de equipo</label>
+                <div class="col-sm-10"><select id="inputtipoequipo" class="form-select">
+                    <option selected>Selecciona...</option>
+                    <option value="1">tipo de equipo a</option>
+                    <option value="2">tipo de equipo b</option>
+                    <option value="3">tipo de equipo c</option>
+                  </select></div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputnombreEquipo" class="col-sm-2 col-form-label">Nombre de Equipo</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputnombreEquipo">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="ubicacionEquipo" class="form-label">Ubicacion</label>
+                <textarea class="form-control" id="ubicacionEquipo" rows="3"></textarea>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputcircuito" class="col-sm-2 col-form-label">Circuito</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputcircuito">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputdirecciondpn" class="col-sm-2 col-form-label">Direccion DPN</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputdirecciondpn">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputdireccionip" class="col-sm-2 col-form-label">Direccion IP</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputdireccionip">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputpuerto" class="col-sm-2 col-form-label">Puerto</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputpuerto">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputmarca" class="form-label">Marca</label>
+                <div class="col-sm-10"><select id="inputmarca" class="form-select">
+                    <option selected>Selecciona...</option>
+                    <option value="1">Marca a</option>
+                    <option value="2">Marca b</option>
+                    <option value="3">Marca c</option>
+                  </select></div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputrepetidor" class="col-sm-2 col-form-label">Repetidor</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputrepetidor">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <label for="busquedaequipos" class="form-label">Busqueda</label>
+              <input class="form-control" list="datalistOptions" id="busquedaequipos"
+                placeholder="Escriba para comenzar busqueda">
+              <datalist id="datalistOptions">
+                <option value="Equipo A">
+                <option value="Equipo B">
+                <option value="Equipo c">
+                <option value="Equipo D">
+                <option value="Equipo e">
+              </datalist>
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary">Editar Registro</button>
+                <button type="button" class="btn btn-outline-primary">Eliminar</button>
+              </div>
+            </form>
+            <h4>Consulta de informacion</h4>
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+              <button type="button" class="btn btn-outline-primary">Consultar Catalogo</button>
+              <button type="button" class="btn btn-outline-primary">Generar Excel</button>
+              <button type="button" class="btn btn-outline-primary">Generar PDF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</body>
+
+</html>
